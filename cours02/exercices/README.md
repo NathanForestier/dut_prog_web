@@ -4,7 +4,7 @@
 
 - Paramétrer et installer l’environnement nécessaire à l’exécution de Servlets. 
 - Ecrire et tester des servlets rudimentaires. 
-- 
+- Faire le lien entre une servlet et une base de données.
 
 
 ## Installation de l’environnement
