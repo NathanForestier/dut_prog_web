@@ -56,12 +56,15 @@ Vous pouvez aussi créer une base "sur le cloud" avec des services comme :
 * [ElephantSQL](https://www.elephantsql.com/)
 * ou encore Amazon AWS, Google Cloud, Microsoft azure ...
 
-les 3 premiers offrent un plan "test" gratuit qui sera suffisant pour vos exercices.
+les 3 premiers offrent un plan "test" gratuit qui sera suffisant pour vos exercices.  
+Pour la suite, 
 
 1. Modifiez le nom du driver pour utiliser `org.postgresql.Driver`
 1. L'url de connexion sera de la forme : `jdbc:postgresql://serveur:port/base`
 1. Il faudra utiliser votre login et le mot de passe associé
-1. Compilez et relancez maintenant chacun des programmes précédents. Vous pouvez vérifier à l'aide de psql que tout s'est bien passé.
+1. Compilez et relancez maintenant chacun des programmes précédents.  
+Il faut utiliser le [driver JDBC Postgresql](https://jdbc.postgresql.org/download/postgresql-42.2.5.jar) à l'exécution.
+1. Vous pouvez vérifier à l'aide de psql que tout s'est bien passé.
 
 Vos programmes java sont les clients du serveur postgres hébergeant une base de données.  
 Généralement un serveur est dédié à l'usage de base de données.  
