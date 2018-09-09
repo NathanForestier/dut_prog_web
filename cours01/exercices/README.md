@@ -6,6 +6,7 @@
 - Utiliser les méthodes principales de cette API.
 - Utiliser un driver.
 
+Ces exercices sont supposés être réalisés sous Windows. Bien que les outils utilisés soient disponibles sous Linux ou MacOS, certaines explications sont ici propres à Windows. 
 
 ## Lancer un serveur de données H2
 
