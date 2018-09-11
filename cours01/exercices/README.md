@@ -104,7 +104,7 @@ public class TestBdd
 
 ## Pour aller plus loin ...
 
-* Modifier le programme `Lister` afin qu'il affiche toutes les lignes d'une table dont le nom est passé en paramètre du programme.  
+* Créer un programme `Lister` pour afficher toutes les lignes d'une table dont le nom est passé en paramètre du programme.  
 Vous pourrez l'utiliser avec la commande `java -cp .;h2-1.4.197.jar Lister CLIENTS`
 
 Voici quelques pistes pour y parvenir :
