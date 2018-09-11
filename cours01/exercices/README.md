@@ -21,14 +21,13 @@ Cette librairie contient à la fois les classes utiles au serveur de données (�
 
 Une fenêtre de navigateur s'ouvre, il s'agit d'une application web inclue dans la librairie permettant d'administrer le serveur que nous venons de lancer. Laissons cela de côté pour le moment, votre serveur H2 est prêt à être utilisé. Pour l'arrêter il suffira de faire `CTRL+C` dans la console où vous l'avez lancé, ou de fermer la console.
 
-Pour se connecter à ce serveur à l'aide du Driver JDBC, l'url à utiliser est de la forme `jdbc:h2:tcp://localhost:9092/chemin/tp1`.  
+Dans vos programmes java, pour se connecter à ce serveur à l'aide du Driver JDBC, l'url à utiliser est de la forme `jdbc:h2:tcp://localhost:9092/chemin/tp1`.  
 `localhost:9092` correspond à l'adresse et au port sur lesquelles se connecter.  
 `chemin` est l'endroit où la base sera créée.  
 `tp1` est le nom de la base.
 
 Il n'existe qu'un seul utilisateur pour se connecter : `sa`  
 Vous n'avez pas besoin de mot de passe, une chaine vide conviendra.
-
 
 ## Programmes de base
 
