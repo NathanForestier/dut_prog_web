@@ -78,7 +78,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.WebServlet;
 
-@WebServlet("/First")
+@WebServlet("/servlet-First")
 public class First extends HttpServlet
 {
   public void service( HttpServletRequest req, HttpServletResponse res )
@@ -95,18 +95,16 @@ public class First extends HttpServlet
 }
 ```
 
-Compilez cette servlet et appelez là directement à partir de votre navigateur : http://localhost:8080/vide/First
+Compilez cette servlet et appelez là directement à partir de votre navigateur : http://localhost:8080/vide/servlet-First
 
 L'annotation `@WebServlet` permet de faire le lien entre un chemin indiqué dans le navigateur, et la classe java qui doit s'exécuter.  
-Il est assez pratique d'y mettre le nom de la classe java bien que cela ne soit pas obligatoire.  
-Ce chemin __doit__ commencer par "/", il vient s'ajouter au nom du contexte web, c'est à dire le nom du répertoire "vide" qui se trouve dans webapps dans notre exemple.
+Ce nom __doit__ commencer par "/". L'url d'accès à la servlet sera composée du nom de la webapp suivi de ce nom.
 
 
 ## Génération de html
 
 L'exemple précédent aurait évidemment plus être écrit à l'aide d'une page html statique.  
-Une servlet peut être pratique pour générer une grande quantité de code html ou calculer des données.
-
+Lorsque l'on doit générer une grande quantité de code html ou calculer des données, l'utilisation d'une servlet devient nécessaire.  
 
 1. Ecrivez une servlet "Fibonacci" qui affiche les 30 premières valeurs de cette suite célèbre. La suite est définie par f(n) = f(n-1) + f(n-2) avec f(0) = 0 et f(1) = 1.  
 Pour le dire plus simplement, les deux premiers nombres sont 1, puis les suivants sont la somme des deux nombres précédents. Le résultat à obtenir doit donc être :  
@@ -154,7 +152,7 @@ Cela devrait créer des tables et des données pour la suite des exercices.
 
 1. Affichez tout ceci dans un tableau html avec les titres de colonnes dans des balises "TH".   
 
-1. Modifier ListeJoueurs pour afficher un tableau de joueurs par club. Chaque nom de club sera affiché dans une balise "H2" avant les joueurs correspondants. Trouver une solution pour le faire au moyen d'une seule requête SQL.   
+1. Modifier ListeJoueurs pour afficher un tableau de joueurs par club. Chaque nom de club sera affiché dans une balise "H2" avant les joueurs correspondants. <sup>2</sup> 
 
 1. Mettre en rouge les joueurs qui ont plus de 30 ans au moment de l'affichage de la page.
 
@@ -162,4 +160,5 @@ Cela devrait créer des tables et des données pour la suite des exercices.
 ---
 
 <sup>1</sup> Vérifier les numéros de port et la forme des URL (relative / absolue).
+<sup>2</sup> Il est possible de trouver une solution pour le faire au moyen d'une seule requête SQL.   
 
