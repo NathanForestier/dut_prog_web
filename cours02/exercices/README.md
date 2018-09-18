@@ -38,7 +38,7 @@ Il faudra donc qu'aucun autre programme sur votre système n'utilise ce port.
 ## Test de la configuration
 
 Lancez Firefox (ou autres) et accédez à votre serveur à l’adresse http://localhost:8080/vide. La page de test doit s’afficher correctement.  
-__Attention__: Si vous utiliser un proxy (c'est le cas à l'université de Lille), Il faudra sans doute le désactiver dans votre navigateur !
+__Attention__: Si vous utiliser un proxy (c'est le cas à l'université de Lille), il faudra soit le désactiver dans votre navigateur, soit indiquer que vous ne l'utilisez pas pour "localhost" dans les paramètres réseau.
 
 
 ## Ma première page HTML
@@ -55,7 +55,7 @@ Créez dans le répertoire tomcat/webapps/vide une page HTML nommée essai.html.
 
 Vous pouvez y accéder par l’URL http://localhost:8080/vide/essai.html
 
-Tomcat fourni en effet tous les fichiers présents dans le répertoire du contexte.  
+Tomcat fournit en effet tous les fichiers présents dans le répertoire du contexte.  
 Par sécurité, il n'est par contre pas possible d'accéder au contenu du répertoire WEB-INF.
 
 Pour le moment, nous ne faisons que transmettre un fichier au navigateur.  
@@ -63,9 +63,9 @@ Voyons comment exécuter du code java lorsque l'on appelle tomcat.
 
 ## Ma première compilation
 
-L’archive qui vous a été donnée contient une page Test.html qui appelle une servlet Test.java. Une erreur s’est glissée dans chacun de ces programmes. Faites en sorte que tout fonctionne bien<sup>1</sup>.
+L’archive qui vous a été donnée contient une page `Test.html` qui appelle une servlet `Test.java`. Une erreur s’est glissée dans chacun de ces programmes. Faites en sorte que tout fonctionne bien<sup>1</sup>.
 
-Ce test n’est pas anodin ! Si vous êtes arrivés ici, c’est que le serveur web, le moteur de servlets, le réseau, le proxy, les variables d’environnement systèmes sont tous bien réglés et que vous savez compiler et exécuter une Servlet !
+Ce test n’est pas anodin ! Si vous êtes arrivés ici, c’est que le serveur web, le moteur de servlets, le réseau, le proxy, les variables d’environnement système sont tous bien réglés et que vous savez compiler et exécuter une Servlet !
 
 
 ## Création de ma propre servlet
@@ -104,8 +104,8 @@ Ce chemin __doit__ commencer par "/", il vient s'ajouter au nom du contexte web,
 
 ## Génération de html
 
-L'exemple précédant aurait évidemment plus être écrit à l'aide d'une page html.  
-Il peut être pratique d'utiliser une servlet pour générer une grande quantité de code html ou faire calculer des données par un programme.
+L'exemple précédent aurait évidemment plus être écrit à l'aide d'une page html statique.  
+Une servlet peut être pratique pour générer une grande quantité de code html ou calculer des données.
 
 
 1. Ecrivez une servlet "Fibonacci" qui affiche les 30 premières valeurs de cette suite célèbre. La suite est définie par f(n) = f(n-1) + f(n-2) avec f(0) = 0 et f(1) = 1.  
@@ -117,15 +117,15 @@ Vous devriez obtenir quelquechose ressemblant à :
 ![Palette](img/Palette.png)  
 
 1. Ecrivez une servlet "Ascii" qui affiche une page contenant une table des codes ASCII de 32 à 255 (par exemple sur deux colonnes, la première avec le code et la seconde avec la valeur).  
-Pour cet exercice, enlevez le "charset=UTF-8" de la méthode setContentType et de la balise html META.  
+Pour cet exercice, enlevez le `charset=UTF-8` de la méthode `setContentType` et de la balise html `META`.  
 Si votre navigateur le permet, vous pouvez essayer de faire varier l'encodage des caractères pour voir des différences (essentiellement à partir du caractère 127).
 
 
 ## Page web dynamique
 
-1. Ecrivez une servlet "NouvelAn" qui affiche le nombre de secondes avant la prochaine année.
+1. Ecrivez une servlet `NouvelAn` qui affiche le nombre de secondes avant la prochaine année.
 
-Pour cela, vous pouvez importer et utiliser les objets des packages java.time et java.time.temporal fournis depuis Java 8.  
+Pour cela, vous pouvez importer et utiliser les objets des packages `java.time` et `java.time.temporal` fournis depuis Java 8.  
 _exemple_
 
 ```java
@@ -142,19 +142,19 @@ Chaque appel à cette servlet doit donc logiquement générer un affichage diff�
 
 Il est tout à fait possible, dans une servlet, d'afficher des données provenant d'un SGBD. C'est ce que font la majorité des applications web. Nous allons utiliser JDBC dans notre servlet.
 
-Il faut tout d'abord placer le driver JDBC dans le répertoire WEB-INF/lib de votre contexte web.  
-Tomcat se charge d'ajouter tous les jar présent à cet endroit lorsqu'il démarre.  
+Il faut tout d'abord placer le driver JDBC dans le répertoire `WEB-INF/lib` de votre contexte web.  
+Tomcat se charge d'ajouter tous les jar présent à cet endroit dans son classpath lorsqu'il démarre.  
 
 
 Exécutez les requêtes du fichier [foot.sql](foot.sql) sur votre base de données.  
 Cela devrait créer des tables et des données pour la suite des exercices.
 
 
-1. Ecrivez une servlet "ListeJoueurs" permettant d’afficher le contenu de la table JOUEURS, de la même manière que le programme Select.java écrit dans le TP précédent. L'affichage se fera sur le PrintWriter de la réponse, plutôt que sur `System.out` comme c'était le cas dans notre programme `Select`.  
+1. Ecrivez une servlet "ListeJoueurs" permettant d’afficher le contenu de la table JOUEURS, de la même manière que le programme Select.java écrit dans le TP précédent.  
 
 1. Affichez tout ceci dans un tableau html avec les titres de colonnes dans des balises "TH".   
 
-1. Modifier ListeJoueurs pour afficher un tableau de joueurs par club. Chaque nom de club sera affiché dans une balise "H2" avant les joueurs correspondants.  
+1. Modifier ListeJoueurs pour afficher un tableau de joueurs par club. Chaque nom de club sera affiché dans une balise "H2" avant les joueurs correspondants. Trouver une solution pour le faire au moyen d'une seule requête SQL.   
 
 1. Mettre en rouge les joueurs qui ont plus de 30 ans au moment de l'affichage de la page.
 
