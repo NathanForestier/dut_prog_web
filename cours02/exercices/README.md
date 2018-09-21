@@ -25,7 +25,7 @@ Vous devez mettre le contenu suivant dans ces variables d'environnement (en l'ad
 CLASSPATH=.;E:\tomcat\lib\servlet-api.jar
 JAVA_HOME=C:\program files\java\jdk1.8.0_172
 
-1. Récupérez le fichier [vide.zip](vide.zip) et décompressez le dans le répertoire webapps de Tomcat. Il s'agit d'un contexte web de base.  
+1. Récupérez le fichier [vide.zip](https://github.com/pmathieufr/dut_prog_web/raw/master/cours02/exercices/vide.zip) et décompressez le dans le répertoire webapps de Tomcat. Il s'agit d'un contexte web de base.  
 
 1. Les scripts de lancement de Tomcat se trouvent dans tomcat\bin. Les fichiers "bat" sont utilisés sous windows alors que les fichiers "sh" sont utilisés sous linux et mac. Il y en a deux scripts différents :
 — `startup.bat` lancera le serveur en tache de fond et placera les erreurs dans un fichier de log.
@@ -163,6 +163,6 @@ Cela devrait créer des tables et des données pour la suite des exercices.
 
 ---
 
-<sup>1</sup> Vérifier les numéros de port et la forme des URL (relative / absolue).
+<sup>1</sup> Vérifier les numéros de port et la forme des URL (relative / absolue).  
 <sup>2</sup> Il est possible de trouver une solution pour le faire au moyen d'une seule requête SQL.   
 
