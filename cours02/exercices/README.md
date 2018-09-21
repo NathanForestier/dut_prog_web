@@ -16,20 +16,20 @@ Afin de vérifier la bonne installation vous pouvez ouvrir une console est exéc
 Vérifiez aussi que vous êtes en mesure d'appeler le compilateur en éxécutant `javac -version`.  
 Si ce n'est pas le cas, vous devez aussi configurer la variable "PATH" de votre système.
 
-Configurons correctement deux variables d’environnement :
-- "CLASSPATH" : pour faciliter la compilation des servlets avec `javac`
+Configurons correctement deux variables d’environnement :  
+- "CLASSPATH" : pour faciliter la compilation des servlets avec `javac`  
 - "JAVA_HOME" : qui sera utile au serveur web tomcat
 
 Vous devez mettre le contenu suivant dans ces variables d'environnement (en l'adaptant à votre situation).
 
-CLASSPATH=.;E:\tomcat\lib\servlet-api.jar
+CLASSPATH=.;E:\tomcat\lib\servlet-api.jar  
 JAVA_HOME=C:\program files\java\jdk1.8.0_172
 
 1. Récupérez le fichier [vide.zip](https://github.com/pmathieufr/dut_prog_web/raw/master/cours02/exercices/vide.zip) et décompressez le dans le répertoire webapps de Tomcat. Il s'agit d'un contexte web de base.  
 
-1. Les scripts de lancement de Tomcat se trouvent dans tomcat\bin. Les fichiers "bat" sont utilisés sous windows alors que les fichiers "sh" sont utilisés sous linux et mac. Il y en a deux scripts différents :
-— `startup.bat` lancera le serveur en tache de fond et placera les erreurs dans un fichier de log.
-— `catalina.bat run` lancera le serveur en avant plan affichant les erreur dans la console.
+1. Les scripts de lancement de Tomcat se trouvent dans tomcat\bin. Les fichiers "bat" sont utilisés sous windows alors que les fichiers "sh" sont utilisés sous linux et mac. Il y en a deux scripts différents :  
+— `startup.bat` lancera le serveur en tache de fond et placera les erreurs dans un fichier de log.  
+— `catalina.bat run` lancera le serveur en avant plan affichant les erreur dans la console.  
 Démarrez votre serveur Tomcat. Dans sa configuration standard ce serveur utilise le port 8080.  
 Il faudra donc qu'aucun autre programme sur votre système n'utilise ce port.  
 
