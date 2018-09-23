@@ -148,7 +148,7 @@ Il faut tout d'abord placer le driver JDBC dans le répertoire `WEB-INF/lib` de 
 Tomcat se charge d'ajouter tous les jar présent à cet endroit dans son classpath lorsqu'il démarre.  
 
 
-Exécutez les requêtes du fichier [foot.sql](foot.sql) sur votre base de données.  
+Exécutez les requêtes du fichier [foot.sql](https://github.com/pmathieufr/dut_prog_web/raw/master/cours02/exercices/foot.sql) sur votre base de données.  
 Cela devrait créer des tables et des données pour la suite des exercices.
 
 
