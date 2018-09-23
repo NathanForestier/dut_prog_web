@@ -10,7 +10,7 @@
 ## Installation de l’environnement
 
 - Récupérer et décompresser le contenu du fichier [apache-tomcat-9.0.12.zip](http://wwwftp.ciril.fr/pub/apache/tomcat/tomcat-9/v9.0.12/bin/apache-tomcat-9.0.12.zip). Il s'agit du serveur Java qui nous sera utile pour faire du développement web.
-Notez également l'emplacement et la version du __JDK__ installé, généralement dans "C:\program files\java\". Nous supposerons que vous avez installé une version __1.8.0_172__ ou supérieure.  
+Notez également l'emplacement et la version du __JDK__ installé, généralement dans "C:\program files\java\". Nous supposerons que vous avez installé une version __1.8.0__ ou supérieure.  
 Afin de vérifier la bonne installation vous pouvez ouvrir une console est exécuter `java -version`.
 
 Vérifiez aussi que vous êtes en mesure d'appeler le compilateur en éxécutant `javac -version`.  
