@@ -47,8 +47,10 @@ Créez dans le répertoire tomcat/webapps/vide une page HTML nommée essai.html.
 
 ```html
 <HTML>
-<HEAD><TITLE>Essai</TITLE>
-<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<HEAD>
+  <TITLE>Essai</TITLE>
+  <META http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</HEAD>
 <BODY> Voici ma première page sur mon propre serveur </BODY>
 </HTML>
 ```
