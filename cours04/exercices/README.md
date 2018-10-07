@@ -1,27 +1,27 @@
 # TP : Maintenir un état
 
-Durant ces exercices nous verrons les moyens permettant de maintenir un état entre deux requêtes. 
+Durant ces exercices nous allons étudier les moyens permettant de maintenir un état entre deux requêtes. 
 Nous mettrons en oeuvre pour cela un "Trains de Servlets".  
 Il sera aussi nécessaire de préparer une page permettant de gérer des aspects Multi-formulaires.
 
 ## Concaténation de paramètres dans l'URL
 
-On souhaite maintenant offrir la possibilité de trier la liste des rencontres. Ceci se fait ici en passant le critère de tri en paramètre à la requete HTTP. Copiez ListeSimple en une nouvelle servlet ListeRencontres que vous allez modifier.
+On souhaite maintenant offrir à l'utilisateur la possibilité de trier la liste des rencontres sur la colonne qu'il souhaite. Pour y parvenir, nous allons passer le critère de tri en paramètre à la requete HTTP. Copiez ListeSimple en une nouvelle servlet ListeRencontres que vous allez modifier.
 
 1. Faites en sorte qu’une requête avec un paramètre tri=nomcol permette d’afficher la table triée sur la colonne souhaitée
 (un seul critère de tri). Cette page doit pouvoir être appelée avec ou sans paramètres.  
 http://localhost:8080/vide/ListeRencontres  
 http://localhost:8080/vide/ListeRencontres?tri=jour  
-1. Modifiez votre servlet pour que les noms de colonne soient des hyperliens permettant le tri d’un simple clic.
-1. Ajoutez le sens de tri comme paramètre de manière à ce que, à la manière d’un "toggle button" : chaque clic sur le nom de colonne inverse l’ordre de tri  
+1. Modifiez votre servlet pour que les noms des colonnes du tableau soient maintenant des hyperliens permettant le tri d’un simple clic.
+1. Ajoutez le sens de tri comme autre paramètre de manière à ce que, à la manière d’un "toggle button" : chaque clic sur le nom de colonne inverse l’ordre de tri  
 http://localhost:8080/vide/ListeRencontres  
 http://localhost:8080/vide/ListeRencontres?tri=annee&sens=asc  
-Vous constaterez que deux utilisateurs différents, peuvent avoir chacun leurs propres critères simultanément.
+En ouvrant 2 navigateurs, vous constaterez que deux utilisateurs différents, peuvent avoir chacun leurs propres critères simultanément.
 
 
 ## Ajout de champs cachés
 
-1. Ajoutez un champ de saisie sous le titre des colonnes jour, club_a et club_b permettant de filtrer les données de la page. Il faudra aussi un boutton pour valider les données saisie et envoyer du formulaire html associé. Les données du formulaire seront envoyés en POST.
+1. Ajoutez un champ de saisie sous le titre des colonnes `jour`, `club_a` et `club_b permettant de filtrer les données de la page. Il faudra aussi un boutton pour valider les données saisie et envoyer du formulaire html associé. Les données du formulaire seront envoyés en POST.
 1. Il doit être possible de filtrer selon plusieurs critères et l'on doit pouvoir trier en même temps des données.
 
 ## Manipuler un Cookie
