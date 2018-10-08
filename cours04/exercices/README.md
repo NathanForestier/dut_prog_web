@@ -21,7 +21,7 @@ En ouvrant 2 navigateurs, vous constaterez que deux utilisateurs différents, pe
 
 1. Créer une servlet `MonEquipe` qui génère un formulaire permettant de sélectionner son équipe préférée parmis toutes les clubs existants.
 1. Après avoir choisi une équipe, la servlet `ListerRencontres` ne doit lister que les rencontres concernant cette équipe. Il doit être possible de fermer complétement le navigateur et de revenir sur cette page, toujours avec le même choix défini. On utilisera pour cela un cookie permettant de stocker le nom de l'équipe choisie.
-1. Ajouter un lien vers `MonEquipe` depuis `ListerRencontres`. Sur `MonEquipe` ajouter un lien permettant de supprimer le choix d'équipe. Dans ce cas, `ListerRencontres` affiche de nouveau tous les matchs.
+1. Ajouter un lien vers la servlet `MonEquipe` depuis la servlet `ListerRencontres`. Sur `MonEquipe` ajouter un lien permettant de supprimer le choix d'équipe. Dans ce cas, `ListerRencontres` affiche de nouveau tous les matchs.
 
 ## Multi-formulaire
 
