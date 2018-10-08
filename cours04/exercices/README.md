@@ -20,14 +20,14 @@ En ouvrant 2 navigateurs, vous constaterez que deux utilisateurs différents, pe
 
 ## Ajout de champs cachés
 
-1. Ajoutez un formulaire contenant un champ de saisie sous le titre des colonnes `jour`, `club_a` et `club_b` permettant de filtrer les données de la page. On ajoutera aussi un bouton pour valider les données saisies et envoyer le formulaire. Les données du formulaire seront envoyés en POST.
-1. Il doit être possible de filtrer selon plusieurs critères et l'on doit pouvoir trier en même temps les données.
+1. Ajoutez un formulaire contenant un champ de saisie sous le titre des colonnes `jour`, `club_a` et `club_b` permettant de filtrer les données de la page. On ajoutera bien sûr un bouton pour valider les données saisies et envoyer en POST le formulaire.
+1. Faites en sorte qu'il soit possible de filtrer selon plusieurs critères et que l'on puisse trier en même temps les données.
 
 ## Manipuler un Cookie
 
-1. Créer une servlet `MonEquipe` qui permet de sélectionner son équipe préférée parmis toutes les clubs existants.
-1. Après avoir choisi une équipe, la servlet `ListerRencontres` ne doit lister que les rencontres concernant cette équipe. Il doit être possible de fermer complétement le navigateur et de revenir sur cette page, toujours avec le même choix défini.
-1. Ajouter un lien vers `MonEquipe` depuis `ListerRencontres`. Sur `MonEquipe` ajouter un lien permettant d'effacer le choix, dans ce cas, `ListerRencontres` affiche de nouveau tous les matchs.
+1. Créer une servlet `MonEquipe` qui génère un formulaire permettant de sélectionner son équipe préférée parmis toutes les clubs existants.
+1. Après avoir choisi une équipe, la servlet `ListerRencontres` ne doit lister que les rencontres concernant cette équipe. Il doit être possible de fermer complétement le navigateur et de revenir sur cette page, toujours avec le même choix défini. On utilisera pour cela un cookie permettant de stocker le nom de l'équipe choisie.
+1. Ajouter un lien vers `MonEquipe` depuis `ListerRencontres`. Sur `MonEquipe` ajouter un lien permettant de supprimer le choix d'équipe. Dans ce cas, `ListerRencontres` affiche de nouveau tous les matchs.
 
 ## Multi-formulaire
 
