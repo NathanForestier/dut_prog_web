@@ -60,15 +60,7 @@ table _rencontres_
 1. Ecrire une servlet `ListeSimple` qui affiche l’ensemble des informations de la table _rencontres_ dans une table HTML.
 Cette page est donc appelée par la requête HTTP : http://localhost:8080/vide/ListeSimple
 
-### Saisir et modifier des données
+### Saisir et insérer des données
 
-1. Créer une servlet "CreerRencontre" qui permet de saisir et d'insérer une nouvelle rencontre dans la base. L'affichage du formulaire pourra se faire dans le "doGet" et la gestion de l'insertion dans le "doPost". Si l'insertion s'est bien passée, vous pouvez rediriger l'utilisateur vers ListeSimple.  
-
-1. Ajouter un lien "modifier" (tag `<a>`) à chaque ligne de la page ListeSimple, qui aura pour objectif de permettre de modifier les données de la rencontre concernée en appelant la servlet suivante.  
-
-1. Crééz une servlet "ModifierRencontre" prenant en paramètre le num_rencontre pour afficher les données actuelles de celle-ci dans un formulaire. Un bouton permet de les valider et mettre à jour la table des rencontres. Les données sont transmises en POST et l'utilisateur est redirigé vers ListeSimple après modification des données.  
-
-1. Observer les points communs entre "CreerRencontre" et "ModifierRencontre". Réaliser une servlet "EditerRencontre" qui permettra d'ajouter ou modifier une rencontre. Une fois celà fait, les deux premières servlet ne seront plus nécessaire.
-
-
+1. Créer une servlet `CreerRencontre` qui permet de saisir et d'insérer une nouvelle rencontre dans la base. L'affichage du formulaire pourra se faire dans le `doGet` et la gestion de l'insertion dans le `doPost`. Si l'insertion s'est bien passée, vous pouvez rediriger l'utilisateur vers `ListeSimple`.  
 
