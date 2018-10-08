@@ -17,12 +17,6 @@ http://localhost:8080/vide/ListeRencontres
 http://localhost:8080/vide/ListeRencontres?tri=annee&sens=asc  
 En ouvrant 2 navigateurs, vous constaterez que deux utilisateurs différents, peuvent avoir chacun leurs propres critères simultanément.
 
-
-## Ajout de champs cachés
-
-1. Ajoutez un formulaire contenant un champ de saisie sous le titre des colonnes `jour`, `club_a` et `club_b` permettant de filtrer les données de la page. On ajoutera bien sûr un bouton pour valider les données saisies et envoyer en POST le formulaire.
-1. Faites en sorte qu'il soit possible de filtrer selon plusieurs critères et que l'on puisse trier en même temps les données.
-
 ## Manipuler un Cookie
 
 1. Créer une servlet `MonEquipe` qui génère un formulaire permettant de sélectionner son équipe préférée parmis toutes les clubs existants.
@@ -37,3 +31,8 @@ Une page peut contenir différents formulaires, mais néanmoins les données de 
 1. Permettez maintenant de pouvoir modifier une rencontre existante à partir de ce formulaire.
 1. Ajouter un bouton `supprimer` sur chaque ligne, permettant d'effacer la rencontre correspondante.
 
+
+## Ajout de champs cachés
+
+1. Ajoutez un formulaire contenant 3 champs de saisie placés chacun sous le titre des colonnes `jour`, `club_a` et `club_b` et permettant de filtrer les données de la page. On cherchera donc à construire une clause `Where` contenant la conjonction des différents champs renseignés dans ce formulaire. On ajoutera bien sûr un bouton pour valider les données saisies et envoyer en POST le formulaire.
+1. Faites en sorte qu'il soit possible de filtrer selon plusieurs critères et que l'on puisse trier en même temps les données. Pour cela on utilisera systématiquement les valeurs des filtres pour la constitution des URL.
