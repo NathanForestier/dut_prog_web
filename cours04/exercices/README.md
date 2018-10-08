@@ -1,7 +1,7 @@
 # TP : Maintenir un état
 
 Durant ces exercices nous allons étudier les moyens permettant de maintenir un état entre deux requêtes. 
-Nous étudierons tout d'abord la manière d'ajouter des paramètres pour assurer le bon fonctionnement d'une servlet, nous manipulerons ensuite des champs cachés pour passer des données d'une page à une autre.Nous mettrons en oeuvre ensuite un "Trains de Servlets" et nous finirons avec des aspects Multi-formulaires.
+Nous étudierons tout d'abord la manière d'ajouter des paramètres pour assurer le bon fonctionnement d'une servlet. Nous mettrons en oeuvre ensuite un "Trains de Servlets" puis des aspects Multi-formulaires. Enfin, nous manipulerons ensuite des champs cachés pour passer des données d'une page à une autre
 
 ## Concaténation de paramètres dans l'URL
 
