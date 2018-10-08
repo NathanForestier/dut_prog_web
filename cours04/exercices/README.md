@@ -21,7 +21,9 @@ En ouvrant 2 navigateurs, vous constaterez que deux utilisateurs différents, pe
 
 1. Créer une servlet `MonEquipe` qui génère un formulaire permettant de sélectionner son équipe préférée parmis toutes les clubs existants.
 1. Après avoir choisi une équipe, la servlet `ListerRencontres` ne doit lister que les rencontres concernant cette équipe. Il doit être possible de fermer complétement le navigateur et de revenir sur cette page, toujours avec le même choix défini. On utilisera pour cela un cookie permettant de stocker le nom de l'équipe choisie.
-1. Ajouter un lien vers la servlet `MonEquipe` depuis la servlet `ListerRencontres`. Sur `MonEquipe` ajouter un lien permettant de supprimer le choix d'équipe. Dans ce cas, `ListerRencontres` affiche de nouveau tous les matchs.
+1. Visualisez vos propres cookies dans le navigateur (sous Firefox console web, puis storage)
+1. Par défaut le cookie a une durée de vie identique à celle du navigateur. Il est possible de lui donner une durée de vie supérieure grâce à la méthode `setMaxAge(int duree)`, la durée étant en seconde. 
+1. Ajouter un lien vers la servlet `MonEquipe` depuis la servlet `ListerRencontres`. Sur `MonEquipe` ajouter un lien permettant de supprimer le choix d'équipe. Dans ce cas, `ListerRencontres` affichera de nouveau tous les matchs.
 
 ## Ajout de champs cachés
 
