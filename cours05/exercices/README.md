@@ -33,7 +33,7 @@ _rappel du schéma des tables_
 ### Liste en session
 
 1. Ecrire une page `ListerJoueur` qui prend en paramètre un nom de poste (GAR, DEF, ATT, ...). Si le paramètre 'poste' n'est pas fourni on affichera les attaquants. Pour chaque joueur, on pourra se contenter d'afficher le numéro de maillot et le nom de chacun des joueurs.
-1. Sur chaque nom, mettre un lien vers une servlet 'ChoisirJoueur' avec le nom de ce joueur en paramètre. Ecrire ensuite la servlet `ChoisirJoueur' qui ajoute dans une liste (type ÀrrayList`) le nom du joueur sélectionné et qui affiche la liste de tous les joueurs déjà sélectionnés (donc présents dans cette liste). Cette liste sera placée en session. Vous veillerez à bien initialiser l'`ArrayList` à sa première utilisation. On ajoutera en bas de page un lien permettant de revenir à la page `ChoisirJoueur`.
+1. Sur chaque nom, mettre un lien vers une servlet 'ChoisirJoueur' avec le nom de ce joueur en paramètre. Ecrire ensuite la servlet `ChoisirJoueur` qui ajoute dans une liste (type `ArrayList`) le nom du joueur sélectionné et qui affiche la liste de tous les joueurs déjà sélectionnés (donc présents dans cette liste). Cette liste sera placée en session. Vous veillerez à bien initialiser l'`ArrayList` à sa première utilisation. On ajoutera en bas de page un lien permettant de revenir à la page `ChoisirJoueur`.
 1. Sur la page `ListerJoueur`, modifier la génération de liste des joueurs disponibles en ne faisant maintenant apparaitre que les joueurs déjà sélectionnés.
 1. Vérifiez que vous êtes capables d'ajouter une dizaine de joueurs dans votre liste.
 
