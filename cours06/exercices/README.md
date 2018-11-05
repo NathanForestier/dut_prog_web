@@ -10,8 +10,8 @@
 Pour cet exercice nous aurons besoin d'une table `personne` constituée des champs `login`, `mdp`, `nom`, `prenom`, `adresse`, `email`, `tel`, `datenaiss`, ... etc
 
 Ecrire une page `login.html` contenant un formulaire de saisie du login et du mot de passe d’un utilisateur et qui appelle
-une servlet `Authent.java` qui vérifie dans la base de données si cette personne existe ou non et qui redirige vers une servlet  `servlet-Statut` qui se contente d'afficher "utilisateur connu du
-SGBD" dans le cas positif et "Inconnu" dans le cas négatif.
+une servlet `Authent.java` qui vérifie dans la base de données si cette personne existe ou non et qui redirige dans tous les cas vers une servlet  `servlet-Statut` qui se contente d'afficher "utilisateur connu du
+SGBD" dans le cas positif et "Inconnu" dans le cas négatif. Afin de passer cette information entre ces deux pages, on la rangera dans la session de l'utilisateur.
 1. Vérifiez qu’il n’y a ni `while` ni `equals` dans `Authent.java` (sinon vous réinventez la BDD !).
 2. Vérifiez qu'un rechargement de `servlet-Statut`indique toujours la même phrase.
 
