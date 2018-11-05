@@ -15,6 +15,7 @@ SGBD" dans le cas positif et "Inconnu" dans le cas négatif. Afin de passer cett
 1. Vérifiez qu’il n’y a ni `while` ni `equals` dans `Authent.java` (sinon vous réinventez la BDD !).
 2. Vérifiez qu'un rechargement de `servlet-Statut`indique toujours la même phrase.
 3. Quittez et relancez votre navigateur sur la page `servlet-Statut`. A priori vous devriez être à nouveau inconnu ! (quitter le navigateur fait perdre la session).
+4. Affichez la console Web du navigateur; onglet "storage". Vous constatez que l'objet session se nomme JSESSIONID
 
 ## Site de gestion de joueurs
 On souhaite réaliser une application web permettant à chaque joueur de s’identifier et d’accéder à sa fiche personnelle (et pas à celle des autres) de deux manières différentes : l’une en lecture et l’autre en écriture. 
