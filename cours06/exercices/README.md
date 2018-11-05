@@ -10,9 +10,10 @@
 Pour cet exercice nous aurons besoin d'une table `personne` constituée des champs `login`, `mdp`, `nom`, `prenom`, `adresse`, `email`, `tel`, `datenaiss`, ... etc
 
 Ecrire une page `login.html` contenant un formulaire de saisie du login et du mot de passe d’un utilisateur et qui appelle
-une servlet `Authent.java` qui vérifie dans la base de données si cette personne existe ou non. Elle affichera "utilisateur connu du
+une servlet `Authent.java` qui vérifie dans la base de données si cette personne existe ou non et qui redirige vers une servlet  `servlet-Statut` qui se contente d'afficher "utilisateur connu du
 SGBD" dans le cas positif et "Inconnu" dans le cas négatif.
-Vérifiez qu’il n’y a ni `while` ni `equals` dans `Authent.java` (sinon vous réinventez la BDD !).
+1. Vérifiez qu’il n’y a ni `while` ni `equals` dans `Authent.java` (sinon vous réinventez la BDD !).
+2. Vérifiez qu'un rechargement de `servlet-Statut`indique toujours la même phrase.
 
 ## Site de gestion de joueurs
 On souhaite réaliser une application web permettant à chaque joueur de s’identifier et d’accéder à sa fiche personnelle (et pas à celle des autres) de deux manières différentes : l’une en lecture et l’autre en écriture. 
